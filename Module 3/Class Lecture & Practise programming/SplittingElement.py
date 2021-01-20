@@ -1,0 +1,12 @@
+input_string = "this is the string to split"
+result_one = input_string.split()
+print("Default split (on spaces):")
+print(result_one)
+print()
+result_two = input_string.split("i")
+print("Split on i:")
+print(result_two)
+print()
+result_three = input_string.split("is")
+print("Split on is:")
+print(result_three)

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Build your pizza</title>
+</head>
+<body>
+<form method="POST" action="orderpizzatype.py">
+<h1>Select your pizza type</h1>
+<h3>Pizza size</h3>
+<input type="radio" name="size" value="Small"/>&nbsp;Small<br/>
+<input type="radio" name="size" value="Medium" checked/>&nbsp;Medium<br/>
+<input type="radio" name="size" value="Large"/>&nbsp;Large<br/>
+<br/>
+<fieldset>
+<legend>Pizza base</legend>
+<input type="radio" name="base" value="Thick"/>&nbsp;Thick<br/>
+<input type="radio" name="base" value="Thin" checked/>&nbsp;Thin<br/>
+</fieldset>
+<br/>
+<input type="submit" value="Place order"/>
+</form>
+</body>
+</html>

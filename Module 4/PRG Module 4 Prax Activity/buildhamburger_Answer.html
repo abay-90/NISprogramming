@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Build your pizza</title>
+</head>
+<body>
+<form method="POST" action="processburgerorder.py" enctype="multipart/form-data">
+<h1>Build your hamburger</h1>
+<fieldset>
+<legend>Patty type</legend>
+<input type="radio" name="patty" value="Beef"/>&nbsp;Beef<br/>
+<input type="radio" name="patty" value="Chicken" checked/>&nbsp;Chicken<br/>
+<input type="radio" name="patty" value="Rib"/>&nbsp;Rib<br/>
+<input type="radio" name="patty" value="Vegetarian"/>&nbsp;Vegetarian<br/>
+</fieldset>
+<br/>
+<fieldset>
+<legend>Bread type</legend>
+<input type="radio" name="bread" value="Normal bun" checked/>&nbsp;Normal bun<br/>
+<input type="radio" name="bread" value="Ciabatta"/>&nbsp;Ciabatta<br/>
+<input type="radio" name="bread" value="Angus bun"/>&nbsp;Angus bun<br/>
+</fieldset>
+<br/>
+<fieldset>
+<legend>Select your toppings</legend>
+<input type="checkbox" name="cheese"/>&nbsp;Cheese<br/>
+<input type="checkbox" name="tomato"/>&nbsp;Tomato<br/>
+<input type="checkbox" name="egg"/>&nbsp;Egg<br/>
+<input type="checkbox" name="bacon"/>&nbsp;Bacon<br/>
+<input type="checkbox" name="onion"/>&nbsp;Onion<br/>
+</fieldset>
+<br/>
+<fieldset>
+<legend>Loyalty program</legend>
+<select name="loyalty">
+<option value="None">None</option>
+<option value="Points">BurgerCo Points</option>
+</select>
+</fieldset>
+<br/>
+<fieldset>
+<legend>Loyalty program</legend>
+<input type="file" name="user_image" accept=".png,.jpg"/>
+</fieldset>
+<br/>
+<input type="submit" value="Place order"/>
+</form>
+</body>
+</html>
